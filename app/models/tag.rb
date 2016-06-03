@@ -1,4 +1,6 @@
 class Tag < ActiveRecord::Base
+  has_and_belongs_to_many :videos
+
   validates :word, presence: true, uniqueness: true
 
   validate :starts_with_octothorpe
