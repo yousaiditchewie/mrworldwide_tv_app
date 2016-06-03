@@ -1,4 +1,5 @@
 User.delete_all
+Video.delete_all
 # user = User.new password: "abc123", password_confirmation: "abc123"
 # user.save
 
@@ -20,5 +21,10 @@ statement: "we the people, in order to form a more prefect union"
 )
 ez.save
 
+timber = Video.create(
+  title:      "Timber",
+  youtube_id: "hHUbLv4ThOo"
+)
+puts timber.errors.full_messages
 puts ez.errors.full_messages
 puts pj.errors.full_messages
