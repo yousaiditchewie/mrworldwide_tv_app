@@ -1,5 +1,6 @@
 User.delete_all
 Video.delete_all
+Tag.delete_all
 # user = User.new password: "abc123", password_confirmation: "abc123"
 # user.save
 
@@ -25,6 +26,10 @@ timber = Video.create(
   title:      "Timber",
   youtube_id: "hHUbLv4ThOo"
 )
+
+# dale = Tag.create
+dale = Tag.create word: "#dale"
+puts dale.errors.full_messages
 puts timber.errors.full_messages
 puts ez.errors.full_messages
 puts pj.errors.full_messages
