@@ -7,7 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+  <h1> Mr. Worldwide TV</h1>
+  <h2>Dale!</h2>
 
+  <nav>
+    <ul>
+      <li>Welcome</li>
+      <li><%= link_to "Add Videos", new_video_path %></li>
+    </ul>
+  </nav>
+</header>
 <%= yield %>
 
 </body>
